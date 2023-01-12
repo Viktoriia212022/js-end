@@ -36,6 +36,10 @@ img {
 
     @media screen and (min-width: 768px) {
              width: 768px;
+            padding-left: 30px;
+                padding-right: 30px;
+                
+                padding-bottom: 80px;
          }
     
     @media screen and (min-width: 1200px) {
@@ -47,15 +51,45 @@ li{
     list-style-type: none;
 }
 .home_header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: grey;
-    background-image: url(../images/home-текстура.jpg);
+    background-image: url(../images/home-phone-1x-min.jpg);
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: 
+                url(../images/home-phone-2x-min.jpg)
+        }
+    @media screen and (min-width: 768px) {
+        background-image: 
+            url(../images/home-table-1x-min.jpg);
+            @media (min-device-pixel-ratio: 2),
+                    (min-resolution: 192dpi),
+                    (min-resolution: 2dppx) {
+                    background-image: 
+                        url(../images/home-table-2x-min.jpg)
+         }}
+     @media screen and (min-width: 1200px) {
+            background-image: 
+                url(../images/home-текстура-1x-min.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url(../images/home-текстура-2x-min.jpg)
+       
+        }}
+        
 }
+      
+     
+
 
 
 .home_header-logo-text {
-   
-   
-    font-family: 'Roboto';
+       font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
@@ -66,6 +100,7 @@ li{
     @media screen and (max-width: 768px) {
             visibility: hidden;
             display: none;
+            
         }
 }
 
@@ -122,6 +157,9 @@ li{
     @media screen and (min-width: 768px){
         width: 340px;
     }
+        @media screen and (min-width: 1200px) {
+            width: 395px;
+        }
 }
 
 input::-webkit-input-placeholder {
